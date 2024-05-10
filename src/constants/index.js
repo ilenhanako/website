@@ -116,55 +116,67 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "SUTD x Singtel Information Systems & Programming Award",
+    award: "2nd Place in Computer Science Cohort in SUTD",
+    company_name: "by Singtel, SUTD",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "April 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a native Android app that centralizes reviews from other platforms, and utilizes Generative AI, ChatGPT’s LLM to give restaurant recommendations based on user preferences and the restaurants’ profiles.",
+      "Role in team: LLM lead engineer and Android app developer."
     ],
+    github: "https://github.com/ilenhanako/t4app"
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Hack4Cities Hackathon",
+    award: "Top 10 Finalists",
+    company_name: "by SMU Smart City Society, IBM Singapore",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "September 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Addressed smart city transportation complexities using quantum-centric supercomputing",
+      "Implemented Grover’s, QAOA and Quantum Walk algorithms"
     ],
+    github: "https://github.com/ilenhanako/HackForCities-Hackathon"
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Tech4Women Hackathon",
+    award: "1st Runner Up & Special Award by STACK Infrastructure",
+    company_name: "by Women-Forum for Economy and Society, STACK Infrastructure, Agorize",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "November 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "An online learning blockchain platform addressing the STEM gender gap", 
+      "Competed in the finals at the Women’s Forum Global Meeting in Paris"
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "SCSE Computing Challenge",
+    award: "3rd place, Young Technopreneurs Award",
+    company_name: "by NTU School of Computer Science and Engineering",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "January 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a machine learning CRNN model for predicting answers for handwritten mathematical equations",
+      "Achieved 96% accuracy with over 500 000 datasets",
+      "Developed a web app using ReactJS and integrating the CRNN model."
+    ],
+    github:"https://github.com/ilenhanako/NTU-SCSE-Challenge-2021"
+  },
+  {
+    title: "Prudential Young Trailblazers Challenge",
+    award: "2nd Place, Best Business Plan",
+    company_name: "by Prudential, Acorn Training",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "July 2018",
+    points: [
+      "Built a smart seating system for hawker centres using Arduino",
+      "Pitched business plan to the CEO and CIO of Prudential Singapore"
     ],
   },
 ];
@@ -198,12 +210,13 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Gobble",
+    competition: "SUTD x Singtel Information Systems & Programming Award",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Gobble is a review app that consolidates feedback from various platforms and offers personalized restaurant recommendations using generative AI, along with comparative insights between eateries.",
     tags: [
       {
-        name: "react",
+        name: "GenAI LLM",
         color: "blue-text-gradient",
       },
       {
@@ -211,54 +224,63 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Android",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ilenhanako/t4app",
+    id:"gobbleproject",
+    bgColor:"bg-orange-300"
   },
   {
-    name: "Job IT",
+    name: "SeatAIfy",
+    competition: "Temasek X SUTD GenAI Hackathon",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed a web app to assist event planners in generating invite lists and seating allocation using GenAI LLM.",
     tags: [
       {
-        name: "react",
+        name: "GenAI LLM",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Azure OpenAI API",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "StreamLit",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ilenhanako/genai_hackathon_24",
   },
   {
-    name: "Trip Guide",
+    name: "Qubit Force",
+    competition:"Hack for Cities Hackathon",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "Addressed the challenges of smart city transportation using advanced quantum computing techniques.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+        name: "quantum computing",
+        color: "orange-text-gradient",
+      }
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ilenhanako/HackForCities-Hackathon",
+  },
+  {
+    name: "EnovateSG",
+    competition:"Tech for Cities Hackathon",
+    description:
+    "Conceptualized a web app to assist urban planners in enhancing solar panel technology. Utilized Digital Twin and IoT Devices to optimize solar panel deployment, while minimizing urban heating island effects ",
+    tags: [
+      {
+        name: "digital twin",
+        color: "purple-text-gradient",
+      }
+    ],
+    image: tripguide
   },
 ];
 

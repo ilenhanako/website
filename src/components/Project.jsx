@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import {testGobble} from "../assets"
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -35,12 +36,15 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
-const About = () => {
+const Project = () => {
   return (
     <>
+    <div className={`relative w-full h-screen mx-auto min-h-500`} style={{ backgroundImage: `url(${testGobble})` }}>
+    </div>
+    <div>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>About Me</h2>
+        <p className={styles.sectionSubText}>My Work</p>
+        <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
 
       <motion.p
@@ -56,8 +60,9 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div> */}
+    </div>
     </>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(Project, "project");
