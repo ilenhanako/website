@@ -39,17 +39,23 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>About Me</h2>
+        {/*<p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>About Me</h2>*/}
       </motion.div>
-
+    <div className="flex">
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-2xl leading-[30px]'
       >
-        I am a budding software developer currently pursuing a degree in Computer Science & Design at the Singapore University of Technology and Design.
-        My interest in technology was sparked by robotics from an early age during my primary school years, motivating me to further explore and innovate in new technologies. I also have a passion for gardening, reading, and enjoying matcha lattes.
-        Please feel free to review my resume below.      </motion.p>
+        I am a budding software developer at the Singapore University of Technology and Design.
+        <br/><br/>My interest in technology was sparked by robotics from an early age during my primary school years, motivating me to further explore and innovate in new technologies. 
+        <br/><br/>I also have a passion for gardening, reading, and enjoying matcha lattes.
+    </motion.p>
+
+    <img src="https://media.licdn.com/dms/image/D5603AQHvU6YmTfEOsA/profile-displayphoto-shrink_800_800/0/1698433543961?e=1721260800&v=beta&t=vv87FbecdOvKHnK0edjOP5BptaMEkukfNc88hiQD89U" 
+    alt="Description of the image" 
+    className="rounded-full mt-[-150px] ml-20"/>
+    </div>
 {/*
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
@@ -60,4 +66,6 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+/*export default SectionWrapper(About, "about");*/
+
+export default About;

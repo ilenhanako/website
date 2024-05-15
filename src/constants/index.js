@@ -16,23 +16,24 @@ import {
   figma,
   docker,
   meta,
+  PseatAIfy,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
+  Pgobble,
+  
   tripguide,
   threejs,
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "work",
+    title: "Awards",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -228,7 +229,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: Pgobble,
     source_code_link: "https://github.com/ilenhanako/t4app",
     id:"gobbleproject",
     bgColor:"bg-orange-300"
@@ -237,7 +238,7 @@ const projects = [
     name: "SeatAIfy",
     competition: "Temasek X SUTD GenAI Hackathon",
     description:
-      "Developed a web app to assist event planners in generating invite lists and seating allocation using GenAI LLM.",
+      "Built a web app in Python with Streamlit and the Azure OpenAI API, all to assist Temasek Holdings' HR Department in throwing the best events ever. Using prompt engineering and Retrieval-Augmented Generation (RAG).",
     tags: [
       {
         name: "GenAI LLM",
@@ -252,22 +253,24 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: PseatAIfy,
     source_code_link: "https://github.com/ilenhanako/genai_hackathon_24",
+    bgColor:"bg-green-200"
   },
   {
     name: "Qubit Force",
     competition:"Hack for Cities Hackathon",
     description:
-    "Addressed the challenges of smart city transportation using advanced quantum computing techniques.",
+    "Addressed the challenges of smart city transportation using advanced quantum computing techniques. Implemented a diverse range of quantum algorithms, including Grover's, QAOA, and Quantum Walk, within the framework of our solution.",
     tags: [
       {
         name: "quantum computing",
-        color: "orange-text-gradient",
+        color: "purple-text-gradient",
       }
     ],
     image: tripguide,
     source_code_link: "https://github.com/ilenhanako/HackForCities-Hackathon",
+    bgColor:"bg-violet-300"
   },
   {
     name: "EnovateSG",
@@ -280,7 +283,95 @@ const projects = [
         color: "purple-text-gradient",
       }
     ],
-    image: tripguide
+    image: tripguide,
+    bgColor:"bg-amber-200"
+  },
+  {
+    name: "Trifract",
+    competition:"Design Thinking and Innovation Module",
+    description:
+    "Built a life-sized product of a light installation that promotes social interaction at Changi City Point. Created a 3D simulation of our product with Unreal Engine 5. Used Arduino and Hall Effect Sensor for the electronics",
+    tags: [
+      {
+        name: "Unreal Engine",
+        color: "purple-text-gradient",
+      },
+      {name: "Arduino Programming",
+      color: "orange-text-gradient",
+    }
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/ilenhanako/NTU-SCSE-Challenge-2021",
+    bgColor:"bg-rose-200"
+  },
+  {
+    name: "STEMFEMily",
+    competition:"Tech for Women Hackathon",
+    description:
+    "Conceptualized an online learning blockchain platform addressing the STEM gender gap. Invited to speak at the Women’s Forum Global Meeting in Paris",
+    tags: [
+      {
+        name: "blockchain",
+        color: "purple-text-gradient",
+      }
+    ],
+    image: tripguide,
+    bgColor:"bg-fuchsia-200"
+  },
+  {
+    name: "ML model for solving handwritten equations",
+    competition:"SCSE Computing Challenge",
+    description:
+    "Developed a machine learning CRNN model for predicting answers for handwritten mathematical equations. Developed a web app using ReactJS and integrating the CRNN model.",
+    tags: [
+      {
+        name: "Machine Learning model",
+        color: "blue-text-gradient",
+      },
+      {name: "CRNN",
+      color: "blue-text-gradient",
+    },
+    {name: "Kaggel",
+    color: "blue-text-gradient",}
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/ilenhanako/NTU-SCSE-Challenge-2021",
+    bgColor:"bg-sky-200"
+  },
+  {
+    name: "PLights",
+    competition:"Prudential Young Trailblazers Challenge",
+    description:
+    "Built a smart seating system to tackle seat hogging for hawker centres using Arduino. Pitched a business plan to Prudential, highlighting the potential benefits such as increased efficiency, customer satisfaction, and revenue for hawker center operators. ",
+    tags: [
+      {
+        name: "Business Challenge",
+        color: "purple-text-gradient",
+      },
+      {name: "Arduino Programming",
+      color: "orange-text-gradient",
+    }
+    ],
+    image: tripguide,
+    bgColor:"bg-slate-200"
+  },
+  {
+    name: "SpongeBot - Table Cleaning Robot",
+    competition:"IDE Maker Challenge",
+    description:
+    "Built an automated table cleaning robot resembling a car with Arduino in C. This robot utilizes motors for navigation and is equipped with various sensors for obstacle avoidance and efficiency in cleaning.",
+    tags: [
+      {
+        name: "Robotics",
+        color: "orange-text-gradient",
+      },
+      {name: "Arduino Programming",
+      color: "orange-text-gradient",
+    }
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/ilenhanako/IDE-Maker-2017",
+    bgColor:"bg-orange-50"
   },
 ];
 

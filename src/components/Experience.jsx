@@ -69,7 +69,7 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText} text-center`} >
           What I have achieved so far
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
